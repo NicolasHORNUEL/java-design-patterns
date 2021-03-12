@@ -4,9 +4,9 @@ public class FactoryTest {
 
 	public static void main(String[] args) {
 		
-		ObjetConnecte objet1 = ObjetConnecteFactory.getObjetConnecte(Type.EnceinteConnectee);
-		ObjetConnecte objet2 = ObjetConnecteFactory.getObjetConnecte(Type.Tablette);
-		ObjetConnecte objet3 = ObjetConnecteFactory.getObjetConnecte(Type.TelephonePortable);
+		ObjetConnecte objet1 = ObjetConnecteFactory.getObjetConnecte(Type.ENCEINTE_CONNECTEE, 3);
+		ObjetConnecte objet2 = ObjetConnecteFactory.getObjetConnecte(Type.TABLETTE, 5);
+		ObjetConnecte objet3 = ObjetConnecteFactory.getObjetConnecte(Type.TELEPHONE_PORTABLE, 4);
 
 		System.out.println(objet1);
 		System.out.println(objet2);

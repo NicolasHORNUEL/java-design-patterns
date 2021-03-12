@@ -8,19 +8,19 @@ class FactoryTestJUnit {
 
 	@Test
 	public void testFactoryEnceinteConnectee() {
-		ObjetConnecte objet = ObjetConnecteFactory.getObjetConnecte(Type.EnceinteConnectee);
+		ObjetConnecte objet = ObjetConnecteFactory.getObjetConnecte(Type.ENCEINTE_CONNECTEE, 3);
 		assertEquals(3, objet.getLimiteVolts());
 	}
 	
 	@Test
 	public void testFactoryTablette() {
-		ObjetConnecte objet = ObjetConnecteFactory.getObjetConnecte(Type.Tablette);
+		ObjetConnecte objet = ObjetConnecteFactory.getObjetConnecte(Type.TABLETTE, 5);
 		assertEquals(5, objet.getLimiteVolts());
 	}
 	
 	@Test
 	public void testFactoryTelephonePortable() {
-		ObjetConnecte objet = ObjetConnecteFactory.getObjetConnecte(Type.TelephonePortable);
+		ObjetConnecte objet = ObjetConnecteFactory.getObjetConnecte(Type.TELEPHONE_PORTABLE, 4);
 		assertEquals(4, objet.getLimiteVolts());
 	}
 	

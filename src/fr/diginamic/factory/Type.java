@@ -2,10 +2,8 @@ package fr.diginamic.factory;
 
 public enum Type {
 
-	
-	TelephonePortable,
-	Tablette,
-	EnceinteConnectee;
-	
+	TELEPHONE_PORTABLE,
+	TABLETTE,
+	ENCEINTE_CONNECTEE;
 	
 }
