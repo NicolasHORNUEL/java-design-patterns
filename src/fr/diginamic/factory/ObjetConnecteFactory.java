@@ -7,6 +7,7 @@ import fr.diginamic.factory.enumeration.Type;
 public class ObjetConnecteFactory {
 	
 	public static ObjetConnecte getObjetConnecte(Type type, int limiteVolts) {
+		
 		if (type.equals(Type.ENCEINTE_CONNECTEE)) {
 			return new EnceinteConnectee(limiteVolts);
 		}
