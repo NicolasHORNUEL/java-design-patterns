@@ -5,19 +5,23 @@ import fr.diginamic.factory.entity.ObjetConnecte;
 import fr.diginamic.factory.enumeration.Type;
 
 public class ObjetConnecteFactory {
-	
+
 	public static ObjetConnecte getObjetConnecte(Type type, int limiteVolts) {
-		
-		if (type.equals(Type.ENCEINTE_CONNECTEE)) {
-			return new EnceinteConnectee(limiteVolts);
+
+		ObjetConnecte objet = null;
+		switch (type) {
+			case ENCEINTE_CONNECTEE:
+				objet =  new EnceinteConnectee(limiteVolts);
+				break;
+			case TABLETTE:
+				objet = new EnceinteConnectee(limiteVolts);
+				break;
+			case TELEPHONE_PORTABLE:
+				objet = new EnceinteConnectee(limiteVolts);
+				break;
 		}
-		else if (type.equals(Type.TABLETTE)) {
-			return new EnceinteConnectee(limiteVolts);
-		}
-		else if (type.equals(Type.TELEPHONE_PORTABLE)) {
-			return new EnceinteConnectee(limiteVolts);
-		}
-		return null;
+		return objet;
+
 	}
 
 }
