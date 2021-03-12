@@ -1,5 +1,8 @@
 package fr.diginamic.factory;
 
+import fr.diginamic.factory.entity.ObjetConnecte;
+import fr.diginamic.factory.enumeration.Type;
+
 public class FactoryTest {
 
 	public static void main(String[] args) {

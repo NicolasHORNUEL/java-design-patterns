@@ -1,4 +1,4 @@
-package fr.diginamic.factory;
+package fr.diginamic.factory.entity;
 
 public class EnceinteConnectee extends ObjetConnecte {
 
