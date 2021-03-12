@@ -2,23 +2,23 @@ package fr.diginamic.singleton;
 
 import java.util.ResourceBundle;
 
-public class Configuration {
+public class Singleton {
 	
-	private static Configuration instance = new Configuration();
+	private static Singleton instance = new Singleton();
 	private ResourceBundle configuration;
 	
 
 	/** Constructeur
 	 * 
 	 */
-	private Configuration() {
+	private Singleton() {
 		this.configuration = ResourceBundle.getBundle("configuration");
 	}
 	
 	/** Getter
 	 * @return the instance
 	 */
-	public static Configuration getInstance() {
+	public static Singleton getInstance() {
 		return instance;
 	}
 
