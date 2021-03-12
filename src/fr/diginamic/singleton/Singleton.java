@@ -5,14 +5,14 @@ import java.util.ResourceBundle;
 public class Singleton {
 	
 	private static Singleton instance = new Singleton();
-	private ResourceBundle configuration;
+	private ResourceBundle bundle;
 	
 
 	/** Constructeur
 	 * 
 	 */
 	private Singleton() {
-		this.configuration = ResourceBundle.getBundle("configuration");
+		bundle = ResourceBundle.getBundle("configuration");
 	}
 	
 	/** Getter
@@ -24,7 +24,7 @@ public class Singleton {
 
 
 	public String getValue(String key) {		
-		return configuration.getString(key);
+		return bundle.getString(key);
 	}
 
 
